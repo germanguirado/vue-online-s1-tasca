@@ -1,0 +1,155 @@
+body {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box {
+    border: black solid 1rem;
+    margin-bottom: 1rem;
+}
+
+#header-top {
+    display: flex;
+    background-color: darkgray;
+    
+}
+.bar {
+    height: 1rem;
+    background-color: darkred;
+    margin: 1rem;
+}
+#logo {
+    flex-grow: 1;
+}
+#nav {
+    flex-grow: 4;
+    margin-left: 0;
+    margin-right: 0;
+}
+#social {
+    flex-grow: 1;
+}
+#header-bottom {
+    display: flex;
+    background-color: darkorange;
+    height: 3rem;
+    border-top: black solid 0.5rem;
+}
+#title {
+    height: 1rem;
+    flex-grow: 1;
+    margin: 1rem;
+    background-color: darkkhaki;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+#article {
+    background-color: gray;
+    flex-grow: 2;
+    border-right: black solid 1rem;
+}
+#section-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.element {
+    background-color: blue;
+    height: 1rem;
+    min-width: 40%;
+    flex-grow: 1;
+    margin: 1rem;
+}
+#element2 {
+    margin-left: 0;
+}
+#element3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#element4 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+#section-bottom {
+    background-color: aqua;
+    height: 1rem;
+    margin: 1rem;
+}
+#aside {
+    background-color: red;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.aside-element {
+    background-color: sandybrown;
+    height: 1rem;
+    margin: 1rem;
+}
+#aside-title {
+    margin-bottom: 0;
+}
+#aside-subtitle {
+    margin-top: 0.5rem;
+}
+
+#footer {
+    background-color: darkgoldenrod;
+    height: 1rem;
+}
+
+@media (max-width: 48rem) {
+    #main {
+        border-color: yellow;
+        flex-direction: column;
+    }
+    #article {
+        border-bottom: yellow solid 1rem;
+        border-right: none;
+    }
+}
+
+@media (max-width: 24rem) {
+    #main {
+        border-color: yellow;
+        flex-direction: column;
+    }
+    #article {
+        border-bottom: yellow solid 1rem;
+        border-right: none;
+    }
+    #header-top {
+        flex-direction: column;
+    }
+    #nav {
+        margin: 0 1rem 0 1rem;
+    }
+    #section-elements {
+        flex-direction: column;
+    }
+    .element {
+        background-color: blue;
+        height: 1rem;
+        margin: 1rem;
+    }
+    #element2 {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+    #element3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    #element4 {
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
